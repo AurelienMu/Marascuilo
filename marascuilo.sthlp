@@ -1,20 +1,20 @@
 {smcl}
 {* *! version 10.0 09apr2022}{...}
-{viewerdialog marascuillo "dialog marascuillo"}{...}
-{viewerjumpto "Title" "marascuillo##title"}{...}
-{viewerjumpto "Syntax" "marascuillo##syntax"}{...}
-{viewerjumpto "Description" "marascuillo##description"}{...}
-{viewerjumpto "Examples" "marascuillo##examples"}{...}
-{viewerjumpto "References" "marascuillo##references"}{...}
+{viewerdialog marascuilo "dialog marascuilo"}{...}
+{viewerjumpto "Title" "marascuilo##title"}{...}
+{viewerjumpto "Syntax" "marascuilo##syntax"}{...}
+{viewerjumpto "Description" "marascuilo##description"}{...}
+{viewerjumpto "Examples" "marascuilo##examples"}{...}
+{viewerjumpto "References" "marascuilo##references"}{...}
 
 {marker title}{...}
 {title:Title}
-{p2col:{bf:marascuillo}}Marascuillo Procedure
+{p2col:{bf:marascuilo}}marascuilo Procedure
 
 {marker syntax}{...}
 {title:Syntax}
 {phang}
-{cmd:marascuillo} {it:response_var} {it:factor_var}{cmd:} {ifin} 
+{cmd:marascuilo} {it:response_var} {it:factor_var}{cmd:} {ifin} 
 
 {phang}
 {it:response_var} : The binary variable accross witch groups comparisons will be performed.{p_end}
@@ -25,7 +25,7 @@
 {title:Description}
 
 {pstd}
-Compute Marascuillo Procedure for multiple groups
+Compute marascuilo Procedure for multiple groups
 percentages comparisons.
 
 {pstd}
@@ -44,13 +44,13 @@ range
 {pstd}Setup{p_end}
 {phang2}{cmd:. sysuse  auto2, clear}{p_end}
 
-{pstd}Marascuillo Procedure for 2x2 groups comparisons{p_end}
-{phang2}{cmd:. marascuillo foreign rep78}
+{pstd}marascuilo Procedure for 2x2 groups comparisons{p_end}
+{phang2}{cmd:. marascuilo foreign rep78}
 
 {marker references}{...}
 {title:References}
 {pstd} 
-The Marascuillo Procedure. [{browse "https://www.itl.nist.gov/div898/handbook/prc/section4/prc474.htm":https://www.itl.nist.gov/div898/handbook/prc/section4/prc474.htm}] 
+The marascuilo Procedure. [{browse "https://www.itl.nist.gov/div898/handbook/prc/section4/prc474.htm":https://www.itl.nist.gov/div898/handbook/prc/section4/prc474.htm}] 
 {pstd} 
 Marascuilo, L.A. (1966). Large-sample multiple comparisons.  Psychological Bulletin, 65, 280-290.
 
