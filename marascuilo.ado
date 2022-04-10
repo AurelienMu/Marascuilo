@@ -1,6 +1,6 @@
 *! version 1.1  09apr2022
-cap prog drop marascuillo
-program define marascuillo
+cap prog drop marascuilo
+program define marascuilo
 	version 10.0
 	syntax varlist(min=2 max=2)  [if] [in] 
 	marksample touse, novar
@@ -82,8 +82,8 @@ program define marascuillo
 	forvalues k=1(1)`ncol' {       
 		local pct`k' = effectifs[2, `k'] / coltot[1, `k']       /*** compute percentages ****/
 	}
-	/*** Marascuillo procedure ****/
-	di "Marascuillo Procedure : "
+	/*** Marascuilo procedure ****/
+	di "Marascuilo Procedure : "
 	qui levelsof marasc_groups, local(marasc_groups_levels)
 	local var2lab: value label marasc_groups /*** var2 labels ****/
 	
